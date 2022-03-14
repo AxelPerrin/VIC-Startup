@@ -1,23 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.navbar ul{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    background-color: black;
-    color: white;
+.menu-bar{
+    text-align: center;
+    background-color: #067790;
 }
-
-.navbar li {
-    list-style-type: none;
-    padding: 1rem;
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
 }
-
-.navbar a {
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a {
     text-decoration: none;
-    padding: 1rem;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+}
+
+.active, .menu-bar ul li:hover {
+    border-radius: 3px;
+    background-color: #067790;
+}
+.sub-menu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #067790;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    background: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none ;
+}
+a {
+    position: relative;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.logo {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: -70px;
+}
+.sec {
+    height: 90vh;
+    background-image: url('./ressources/wallpaper.webp');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.bouton{
+    margin-bottom: 350px;
+    position: relative;
+    margin-left: 640px;
+    margin-top: 600px;
+    color: #fff;
+    background: #067790;
+    border-radius: 9999px;
+    border: solid 1px rgb(255, 255, 255);
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+}
+.bouton:hover {
+    color:  #DFB708;
 }

@@ -2,22 +2,56 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Immo Coach</title>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     <nav class="navbar">
-         <ul>
-             <li class="navbar-logo">Lorem, ipsum.</li>
-             <li class="navbar-toggle"><i class='bx bx-menu'></i></li>
-             <li class="navbar-links"><a href="#">Home</a></li>
-             <li class="navbar-links"><a href="#">About</a></li>
-             <li class="navbar-links"><a href="#">Skills</a></li>
-             <li class="navbar-links"><a href="#">Contact</a></li>
-         </ul>
-     </nav>
-</body>
-</html>
+    <script src="script.js"></script>
+    <title>VICO</title>
+    </head>
+    <body>
+        <div class="menu-bar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="navbar">
+                <li><a href="#">A Propos</a></li>
+                <li><a href="#">Programmes</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Missions</a></li>
+                            <li><a href="#">Missions</a></li>
+                            <li><a href="#">Missions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Valeurs</a></li>
+                <img src="./ressources/logo.png" alt="" class="logo">
+                <li><a href="#">Ressources</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Missions</a></li>
+                            <li><a href="#">Missions</a></li>
+                            <li><a href="#">Missions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+        </script>
+
+        <section class="sec">
+            <!-- <button class="bouton"> A propos</button> -->
+        </section>
+    </body>
+    </html>
