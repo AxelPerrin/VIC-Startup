@@ -1,22 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=IBM+Plex+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap');
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ressource.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="menu-bar">
+                <ul class="navbar">
+                    <li><a href="apropos2.html">A Propos</a></li>
+                    <li><a href="#">Programmes<i class='bx bx-chevron-down'></i></a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Programme 1</a></li>
+                                <li><a href="#">Programme 2</a></li>
+                                <li><a href="#">Programme 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Valeurs</a></li>
+                    <li><a href="#">Ressources<i class='bx bx-chevron-down'></i></a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Livre Blanc</a></li>
+                                <li><a href="#">Quizz</a></li>
+                                <li><a href="#">Appli</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-section {
-    height: 100vh;
-}
+    </body>
+    </html>
 
-.try1 {
-    background-image: url('./ressources/background.jpg');
-    background-size: cover;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+/////////// CSS /////////////
 
 .menu-bar {
     background-color: white;
@@ -54,7 +93,6 @@ section {
     margin: 10px; 
 }
 .menu-bar ul li:hover .sub-menu-1 ul li {
-    background: transparent;
     text-align: left;
     width: 150px;
     padding: 10px;
@@ -65,62 +103,7 @@ section {
     border-bottom: none ;
 }
 
-.texte {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: row;
-    color: #fff;
-    margin-left: 50px;
-}
 
-.titreText{
-    flex-direction: column;
-    width: 40rem;
-    margin-left: 60em;
-    margin-top: 5rem;
-}
-
-h1 {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 3em;
-    text-shadow: 1px 1px 2px black, 0 0 1em black;
-    transition: transform .2s;
-    cursor: pointer;
-}
-h1:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.1);
-}
-
-.citation {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1em;
-    margin-top: 10px;
-    /* columns: 12em;  */
-    transition: transform .2s;
-    margin-right: 10px;
-}
-.citation:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.carnet {
-    width: 22rem;
-    height: 30rem;
-    margin-top: 7rem;
-    border: 10px solid beige;
-}
-
-.citation2 {
-    display: flex;
-    justify-content: center;
-}
 
 .navbar li:after,
 .navbar li:before {
