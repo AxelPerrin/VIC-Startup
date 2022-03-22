@@ -180,8 +180,39 @@ button {
 }
 
 
+.imagefond img{
+  width: 100%;
+ 
+
+}
+
+.citationImg{
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  font-size:60px;
+  font-family: 'Indie Flower', cursive;
+  
 
 
+}
+
+.auteur{
+  font-size:10px;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  font-size:30px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+
+  
+}
 
 
 
@@ -206,6 +237,7 @@ figure.snip1249 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border-radius: 5%;
 }
 .oui{
     display: flex;
@@ -284,8 +316,8 @@ figure.snip1249 figcaption p {
   margin-bottom: 15px;
 }
 figure.snip1249 figcaption:before {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -308,6 +340,7 @@ figure.snip1249 .add-to-cart {
   font-weight: 800;
   font-size: 0.9em;
   text-transform: uppercase;
+  border-radius: 100px;
 }
 figure.snip1249 .add-to-cart:hover {
   background-color: #20638f;
