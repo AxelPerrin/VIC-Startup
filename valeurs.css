@@ -78,7 +78,7 @@ h4 {
 .menu-bar ul li a {
     text-decoration: none;
     color: black;
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1.2em;
 }
 .sub-menu-1 {
@@ -156,7 +156,7 @@ button {
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: Clarkson,Helvetica,sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;

@@ -10,7 +10,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   
 }
 
@@ -24,7 +24,9 @@ h4 {
     margin: 0;
     box-sizing: border-box;
 }
-
+.menu-bar ul .logo {
+  width: 10%;
+}
 
 
 .menu-bar {
@@ -45,7 +47,7 @@ h4 {
 .menu-bar ul li a {
     text-decoration: none;
     color: black;
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1.2em;
 }
 .sub-menu-1 {
@@ -123,7 +125,7 @@ button {
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: Clarkson,Helvetica,sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -224,7 +226,7 @@ button {
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 figure.snip1249 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -257,7 +259,7 @@ figure.snip1249 .image {
 figure.snip1249 img {
   max-width: 100%;
   vertical-align: top;
-  height:206.1px;
+  height:242.1px;
 }
 figure.snip1249 i {
   position: absolute;
@@ -274,23 +276,8 @@ figure.snip1249 h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
-figure.snip1249:before,
-figure.snip1249:after {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  z-index: 1;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
+
+
 figure.snip1249:before {
   background-color: #067790;
   -webkit-transform: skew(-45deg) translateX(-150%);
