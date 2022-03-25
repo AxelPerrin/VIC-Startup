@@ -565,3 +565,32 @@ button {
     }
     
      
+
+
+
+
+
+
+    .slidercontainer{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .swiper{
+      width: 80%;
+      height: fit-content;
+    }
+
+    .swiper-slide img{
+      width: 100%;
+    }
+
+    .swiper .swiper-button-prev, .swiper .swiper-button-next{
+      color: #067790;
+    }
+    
+    .swiper .swiper-pagination-bullet-active{
+      background: #067790;
+    }
