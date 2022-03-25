@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap%27');
+
 .menu-bar {
     background-color: white;
     margin-top: -5px;
@@ -8,6 +10,7 @@
     display: flex;
     list-style: none;
     color: #fff;
+    text-align: center;
 }
 .menu-bar ul li {
     width: 120px;
@@ -17,12 +20,12 @@
 .menu-bar ul li a {
     text-decoration: none;
     color: black;
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1.2em;
 }
 .sub-menu-1 {
     display: none;
-    z-index: 11;
+    
 }
 .menu-bar ul li:hover .sub-menu-1 {
     display: block;
@@ -46,42 +49,13 @@
     border-bottom: none ;
 }
 
-
-
-.navbar li:after,
-.navbar li:before {
-  content: "";
-  width: 0%;
-  display: block;
-  height: 1px;
-  transition: all 0.3s ease;
-  margin-top: 2px;
-  transition: all 300ms ease-in;
+.menu-bar ul li a:hover{
+  color: #067790;
 }
 
-.navbar li:after {
-  bottom: 25%;
-  left: 0;
+.logo {
+  width: 60%;
 }
-
-.navbar li:before {
-  top: 25%;
-  right: 0;
-}
-
-.navbar li:hover::after {
-  width: 7em;
-  height: 1px;
-  bottom: 25%;
-  background-color: black;
-}
-
-.navbar li:hover::before {
-  width: 7em;
-  height: 1px;
-  top: 25%;
-  background-color: black;
-} 
 
 button {
     margin-top: 5rem;

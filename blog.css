@@ -34,7 +34,7 @@
 
 .logo {
     margin-top: 10px;
-    width: 7%;
+    width: 60%;
 }
 
 .menu-bar ul li a:hover{
@@ -65,6 +65,8 @@
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
     border-bottom: none ;
 }
+
+
 
 header {
     height: 100vh;
